@@ -67,8 +67,14 @@ I can tell from the percentages that there are 12% more females alive. 36% of th
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+1411 Males and 1831 females out of a group were still alive. Overall, there are more living females than males. In the Chi-Square, the P value is one out of a thousand. Males and females have a very minimal risk of dying. Nine out of 10,000 results in Fisher's test have almost the same P value. Additionally, you can view the odds ratio. The likelihood of females living compared to males passing away. We are interested in the likelihood that this will occur. 
 
 ## Conclusions
+
 
