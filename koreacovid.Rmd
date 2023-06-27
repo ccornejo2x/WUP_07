@@ -25,12 +25,13 @@ Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
   
+  
+  
 # Your Question - Is dying independent of sex?
 
+## METHODS
 
-
-
-
+We shall examine the patients' sex to determine whether they are still alive or have passed away.  I'll make use of the Cat~ Cat variables I have in my collection. This is the kind of issue that we may put into our project from the helper file and use to obtain the solution.
 
 ## Graphical results - use ggplot commands to do this  
 
