@@ -77,4 +77,4 @@ fisher.test(table1)
 
 ## Conclusions
 
-
+I discovered how to use the helper file to create a ggplot in today's lecture. I switched the projects variable "kRdata" and the class variable to result. A numerical graph in percent and counting was also something I could do. O also conducted chi- square and Fisher's tests, and the P value for both are the same. The end effect is that we are interested in the likelihood that this will occur. Overall, males had more suffering during the study. Compared to men, women had the advantage. 
