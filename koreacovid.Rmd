@@ -33,16 +33,27 @@ state of a patient must be died or alive - we adjust that as well
 
 We shall examine the patients' sex to determine whether they are still alive or have passed away.  I'll make use of the Cat~ Cat variables I have in my collection. This is the kind of issue that we may put into our project from the helper file and use to obtain the solution.
 
+
 ## Graphical results - use ggplot commands to do this  
 
+#### Plot barplots ggplot way
+
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
-  
+# the group_by followed by summarize(count=n())
 
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
 
+#Now for percentage plot
 
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
 
-
+I can see from the counting chart that there weren't many deaths. It is 50-70. Males make a roughly 40% of the population, with females making up 50%. Males are less numerous than females. Male fatalities are twice as high. 
   
 ## Numerical results
 
